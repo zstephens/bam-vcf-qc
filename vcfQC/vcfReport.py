@@ -65,6 +65,12 @@ def main():
 
 	nFail = sum([n[1] for n in allErrors])
 
+	if outRep == "None":
+		if nFail > 0:
+			exit(1)
+		else:
+			exit(0)
+
 	f = open(slog,'r')
 	fr = f.read()
 	f.close()

@@ -18,7 +18,13 @@
 
 CONFIG=$1
 IN_VCF=$2
-REPORT_OUT=$3
+
+if [ $# -eq 3 ]
+then
+	REPORT_OUT=$3
+else
+	REPORT_OUT="None"
+fi
 
 VCF_PERL=$( cat $CONFIG | grep -w '^VCF_PERL' | cut -d '=' -f2 )
 VCF_VALIDATE=$( cat $CONFIG | grep -w '^VCF_VALIDATE' | cut -d '=' -f2 )
@@ -59,7 +65,7 @@ fi
 $PYTHON_EXEC $VCF_REPORT $IN_VCF $TEMP_V $TEMP_S $REPORT_OUT
 
 ## if everything went as planned, copy useful logs into report directory and delete the rest
-if [ $? -eq 0 ]
+if [ $? -eq 0 ] && [ $REPORT_OUT != "None" ]
 then
 	mv -f $TEMP_V $REPORT_OUT/logs/vcfTools_validate.log
 	mv -f $TEMP_E $REPORT_OUT/logs/vcftools_stats.errors
