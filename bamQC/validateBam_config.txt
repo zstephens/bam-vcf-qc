@@ -1,0 +1,13 @@
+SAMTOOLS_EXEC=/Users/zach/Desktop/bioinformatics_stuff/samtools
+PYTHON_EXEC=python
+JAVA_EXEC=java
+PICARD_VALIDATESAM=/Users/zach/Downloads/picard-tools-1.106/picard-tools-1.106/ValidateSamFile.jar
+
+EOF_CHECK=/Users/zach/Desktop/secondary-qc-tools/bam-vcf-qc/bamQC/EOF_check.py
+EOF_STREAM=/Users/zach/Desktop/secondary-qc-tools/bam-vcf-qc/bamQC/EOF_stream.py
+BAM_QC=/Users/zach/Desktop/secondary-qc-tools/bam-vcf-qc/bamQC/bamQC
+PIC_FAIL=/Users/zach/Desktop/secondary-qc-tools/bam-vcf-qc/bamQC/whyDidPicardFail.py
+AGG_ERRORS=/Users/zach/Desktop/secondary-qc-tools/bam-vcf-qc/bamQC/aggregateErrors.py
+GEN_REPORT=/Users/zach/Desktop/secondary-qc-tools/bam-vcf-qc/bamQC/genReport.py
+
+TEMP_DIR=/Users/zach/Desktop/secondary-qc-tools/bam-vcf-qc/bamQC/

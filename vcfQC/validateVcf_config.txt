@@ -1,0 +1,9 @@
+VCF_PERL=/Users/zach/Downloads/vcftools/perl/
+VCF_VALIDATE=/Users/zach/Downloads/vcftools/bin/vcf-validator
+VCF_STATS=/Users/zach/Downloads/vcftools/bin/vcf-stats
+
+VCF_REPORT=/Users/zach/Desktop/secondary-qc-tools/bam-vcf-qc/vcfQC/vcfReport.py
+
+PYTHON_EXEC=python
+
+TEMP_DIR=/Users/zach/Desktop/secondary-qc-tools/bam-vcf-qc/vcfQC/
